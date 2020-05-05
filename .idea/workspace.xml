@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="первая половина четвёртого задания">
+    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="четвёртое задание (переделанный test_add_group.py)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,7 @@
       <recent name="C:\Users\Mikl\Projects\python_training\env" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
     <configuration name="Unittests for " type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,7 +56,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="py.test in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,7 +72,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="py.test in test_add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,13 +90,13 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.Unittests for " />
-      <item itemvalue="Python tests.py.test in test_add_contact.py" />
-      <item itemvalue="Python tests.py.test in test_add_group.py" />
+      <item itemvalue="Python tests.pytest in test_add_contact.py" />
+      <item itemvalue="Python tests.pytest in test_add_group.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.py.test in test_add_group.py" />
-        <item itemvalue="Python tests.py.test in test_add_contact.py" />
+        <item itemvalue="Python tests.pytest in test_add_group.py" />
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.Unittests for " />
       </list>
     </recent_temporary>
@@ -139,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588661761345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="четвёртое задание (переделанный test_add_group.py)">
+      <created>1588663238753</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588663238753</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,32 +155,33 @@
     <MESSAGE value="methodth, classes" />
     <MESSAGE value="Second_hometask" />
     <MESSAGE value="первая половина четвёртого задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="первая половина четвёртого задания" />
+    <MESSAGE value="четвёртое задание (переделанный test_add_group.py)" />
+    <option name="LAST_COMMIT_MESSAGE" value="четвёртое задание (переделанный test_add_group.py)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1588661760213">
+    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1588663238088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588661760213" />
-    <state width="1899" height="371" key="GridCell.Tab.0.bottom" timestamp="1588663046658">
+    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663238088" />
+    <state width="1899" height="325" key="GridCell.Tab.0.bottom" timestamp="1588668002257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="371" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663046658" />
-    <state width="1899" height="371" key="GridCell.Tab.0.center" timestamp="1588663046657">
+    <state width="1899" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
+    <state width="1899" height="325" key="GridCell.Tab.0.center" timestamp="1588668002257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="371" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663046657" />
-    <state width="1899" height="371" key="GridCell.Tab.0.left" timestamp="1588663046657">
+    <state width="1899" height="325" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
+    <state width="1899" height="325" key="GridCell.Tab.0.left" timestamp="1588668002257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="371" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663046657" />
-    <state width="1899" height="371" key="GridCell.Tab.0.right" timestamp="1588663046657">
+    <state width="1899" height="325" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
+    <state width="1899" height="325" key="GridCell.Tab.0.right" timestamp="1588668002257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="371" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663046657" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588661772316">
+    <state width="1899" height="325" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588663281846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588661772316" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663281846" />
   </component>
 </project>
