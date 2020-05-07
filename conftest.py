@@ -1,5 +1,5 @@
 import pytest
-from application import Application
+from fixtures.application import Application
 
 @pytest.fixture()
 def app(request):
