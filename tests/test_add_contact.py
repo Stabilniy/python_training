@@ -7,3 +7,4 @@ def test_add_contact(app):
                                               work = "Test_work", fax ="Test_fax", email = "Test_email", email1 = "Test_email1", email2 = "Test_email2", email3 = "Test_email3", address2 = "Test_adress2", homepage = "Test_homepage", bday = "5", bmounth = "July",
                                               byear = "1982", aday = "2", amounth = "July", ayear = "2003", phone2 = "Test_phone2", notes = "Test_notes"))
     app.session.logout()
+    
