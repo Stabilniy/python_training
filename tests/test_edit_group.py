@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from modules.group import Group
 
 def test_add_group(app):
