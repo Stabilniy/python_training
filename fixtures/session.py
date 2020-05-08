@@ -1,13 +1,14 @@
-#from application import Application
-
 class SessionHelper:
     
     def __init__(self, app):
         self.app = app
-    
+
+
     def logout(self):
         wd = self.app.wd
         wd.find_element_by_link_text("Logout").click()
+        wd.find_element_by_name("user")
+
         
     def login(self, username, password):
         wd = self.app.wd
