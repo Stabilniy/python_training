@@ -27,6 +27,35 @@ class GroupHelper:
         wd.find_element_by_name("submit").click()
         wd.find_element_by_xpath("//div[@id='content']/div").click()
         self.return_to_group_page()
+
+
+    def delete(self):
+        wd = self.app.wd
+        self.open_groups_page()
+        wd.find_element_by_xpath("//span[1]//input[1]").click()
+        wd.find_element_by_name("delete").click()
+        self.return_to_group_page()
+
+
+    def edit(self, group):
+        wd = self.app.wd
+        self.open_groups_page()
+        wd.find_element_by_xpath("//span[1]//input[1]").click()
+        wd.find_element_by_name("edit").click()
+        wd.find_element_by_name("group_name").click()
+        wd.find_element_by_name("group_name").send_keys(group.name)
+        wd.find_element_by_name("group_header").click()
+        wd.find_element_by_name("group_header").send_keys(group.header)
+        wd.find_element_by_name("group_footer").click()
+        wd.find_element_by_name("group_footer").send_keys(group.footer)
+        wd.find_element_by_name("update").click()
+        self.return_to_group_page()
+
+
+
+
+
+
     
     
     
