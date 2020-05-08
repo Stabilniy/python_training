@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/fixtures/application.py" afterPath="$PROJECT_DIR$/fixtures/application.py" />
-      <change beforePath="$PROJECT_DIR$/fixtures/session.py" afterPath="$PROJECT_DIR$/fixtures/session.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -387,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588935888249</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="adding session=&quot;scope&quot; parameter to pytest">
+      <created>1588937825437</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588937825437</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -437,7 +442,8 @@
     <MESSAGE value="Edit/delete group tests" />
     <MESSAGE value="Edit/delete group tests - rename" />
     <MESSAGE value="Edit/delete contact tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit/delete contact tests" />
+    <MESSAGE value="adding session=&quot;scope&quot; parameter to pytest" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding session=&quot;scope&quot; parameter to pytest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1588663238088">
