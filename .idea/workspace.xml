@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/test_delete_contact.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/test_edit_contact.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/fixtures/group.py" afterPath="$PROJECT_DIR$/fixtures/group.py" />
-      <change beforePath="$PROJECT_DIR$/modules/group.py" afterPath="$PROJECT_DIR$/modules/group.py" />
-      <change beforePath="$PROJECT_DIR$/tests/test_add_contact.py" afterPath="$PROJECT_DIR$/tests/test_add_contact.py" />
+      <change beforePath="$PROJECT_DIR$/tests/test_delete_contact.py" afterPath="$PROJECT_DIR$/tests/test_delete_group.py" />
+      <change beforePath="$PROJECT_DIR$/tests/test_edit_contact.py" afterPath="$PROJECT_DIR$/tests/test_edit_group.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_edit_contact.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_edit_contact.py">
+      <file leaf-file-name="test_edit_group.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_edit_group.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_delete_contact.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_delete_contact.py">
+      <file leaf-file-name="test_delete_group.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_delete_group.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="24" />
+              <caret line="1" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -233,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_edit_contact.py">
+  <component name="RunManager" selected="Python tests.py.test in test_edit_group.py">
     <configuration name="Unittests for " type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,7 +276,7 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_add_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test in test_edit_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_edit_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -291,18 +288,18 @@
       <module name="python_training" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_edit_contact.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_edit_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for " />
       <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_add_contact.py" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_edit_contact.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_edit_group.py" />
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_edit_contact.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_edit_group.py" />
         <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_add_contact.py" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group.py" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for " />
@@ -372,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588864913086</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Edit/delete group tests">
+      <created>1588930844418</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588930844418</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -418,7 +422,8 @@
     <MESSAGE value="первая половина четвёртого задания" />
     <MESSAGE value="четвёртое задание (переделанный test_add_group.py)" />
     <MESSAGE value="готовые пятое и шестое задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="готовые пятое и шестое задания" />
+    <MESSAGE value="Edit/delete group tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit/delete group tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1588663238088">
@@ -665,18 +670,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_delete_contact.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_delete_group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="24" />
+          <caret line="1" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_edit_contact.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_edit_group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
