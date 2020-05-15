@@ -16,6 +16,8 @@ class Application:
  
     def open_homepage(self):
         wd = self.wd
+        if wd.current_url.endswith("/addressbook/") and len(wd.find_elements_by_xpath("//form[@name='MainForm']//div[1]//input[1]")) > 0:
+            return
         wd.get("http://localhost/addressbook/")
         
         

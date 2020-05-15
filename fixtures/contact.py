@@ -1,5 +1,5 @@
 from selenium.webdriver.support.ui import Select
-
+import time
 class ContactHelper:
 
     def __init__(self, app):
@@ -17,6 +17,7 @@ class ContactHelper:
     def delete(self):
         wd = self.app.wd
         self.app.open_homepage()
+        time.sleep(5)
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_xpath("//div[2]//input[1]").click()
         wd.switch_to_alert().accept()
