@@ -25,7 +25,7 @@ class ContactHelper:
     def edit_contact(self, contact):
         wd = self.app.wd
         self.app.open_homepage()
-        wd.find_element_by_xpath("//tr[3]//td[8]//a[1]//img[1]").click()
+        wd.find_element_by_xpath("//tr[2]//td[8]//a[1]//img[1]").click()
         self.fill_contact_form(contact)
         wd.find_element_by_name("update").click()
 
@@ -101,6 +101,11 @@ class ContactHelper:
         wd.find_element_by_name("notes").click()
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys(contact.notes)
+
+    def count(self):
+        wd = self.app.wd
+        self.app.open_homepage()
+        return len(wd.find_elements_by_name("selected[]"))
 
 
 

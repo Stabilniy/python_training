@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 from modules.group import Group
 
-def test_add_group(app):
+def test_edit_group(app):
+    if app.group.count() == 0:
+        app.group.create_group(Group(name="username", header="testheader", footer="testfooter"))
     app.group.edit(Group(name = "_test_to_check_edit222", header = "_test_to_check_edit222", footer = "_test_to_check_edit222"))
+
+

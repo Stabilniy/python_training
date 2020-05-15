@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_training.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_training.iml" afterDir="false" />
+    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="completed 8-th task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_delete_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_delete_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_delete_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_delete_group.py" afterDir="false" />
@@ -143,9 +138,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_edit_contact.py" />
-        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_delete_group.py" />
+        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_delete_contact.py" />
       </list>
     </recent_temporary>
@@ -252,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588937976841</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="completed 8-th task">
+      <created>1589467642897</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1589467642897</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -268,32 +270,38 @@
     <MESSAGE value="adding session=&quot;scope&quot; parameter to pytest" />
     <MESSAGE value="adding session=&quot;scope&quot; parameter to conftest.py" />
     <MESSAGE value="completed 7-th task" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed 7-th task" />
+    <MESSAGE value="completed 8-th task" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed 8-th task" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1588663238088">
+    <state x="587" y="88" key="CommitChangelistDialog2" timestamp="1589467642006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663238088" />
-    <state width="1899" height="368" key="GridCell.Tab.0.bottom" timestamp="1589466543324">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589467642006" />
+    <state width="1899" height="360" key="GridCell.Tab.0.bottom" timestamp="1589527454124">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
+    <state width="1899" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589527454124" />
     <state width="1899" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589466543324" />
-    <state width="1899" height="368" key="GridCell.Tab.0.center" timestamp="1589466543323">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="360" key="GridCell.Tab.0.center" timestamp="1589527454124">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="325" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
+    <state width="1899" height="360" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589527454124" />
     <state width="1899" height="368" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589466543323" />
-    <state width="1899" height="368" key="GridCell.Tab.0.left" timestamp="1589466543323">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="360" key="GridCell.Tab.0.left" timestamp="1589527454124">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="325" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
+    <state width="1899" height="360" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589527454124" />
     <state width="1899" height="368" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589466543323" />
-    <state width="1899" height="368" key="GridCell.Tab.0.right" timestamp="1589466543323">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="360" key="GridCell.Tab.0.right" timestamp="1589527454124">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="325" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
+    <state width="1899" height="360" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589527454124" />
     <state width="1899" height="368" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589466543323" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1589449757965">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -311,10 +319,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589449757965" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588663281846">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1589467669533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663281846" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589467669533" />
+    <state x="-1734" y="24" width="1353" height="793" maximized="true" key="dock-window-1" timestamp="1589486729530">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1734" y="24" width="1353" height="793" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589486729530" />
     <state x="677" y="308" key="git4idea.merge.GitPullDialog" timestamp="1589401444086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
