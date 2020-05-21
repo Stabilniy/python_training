@@ -5,9 +5,13 @@ def test_edit_group(app):
     if app.group.count() == 0:
         app.group.create_group(Group(name="username", header="testheader", footer="testfooter"))
     old_group = app.group.get_group_list()
-    app.group.edit(Group(name = "_test_to_check_edit222", header = "_test_to_check_edit222", footer = "_test_to_check_edit222"))
+    group = Group(name = "_test_to_check_edit222", header = "_test_to_check_edit222", footer = "_test_to_check_edit222")
+    group.id = old_group[0].id
+    app.group.edit(group)
     new_group = app.group.get_group_list()
-    assert len(old_group)  == len(new_group)
+    assert len(old_group) == len(new_group)
+    old_group[0] = group
+    assert sorted(old_group, key=Group.id_or_max) == sorted(new_group, key=Group.id_or_max)
 
 def test_edit_group_name(app):
     if app.group.count() == 0:

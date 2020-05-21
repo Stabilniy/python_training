@@ -96,8 +96,6 @@ class ContactHelper:
             i = element.find_element_by_xpath(".//td[1]")
             id = i.find_element_by_name("selected[]").get_attribute("value")
             text = element.find_element_by_xpath(".//td[3]").text
-            # text = element.get_attribute("title")
-            # id = element.get_attribute("value")
             contact_list.append(Contact(firstname=text, id=id))
         return contact_list
 

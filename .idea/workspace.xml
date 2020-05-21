@@ -19,16 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="Fix ability to add and modify group and contact data partly">
+    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="11-th task for checking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_delete_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_delete_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_delete_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_delete_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_edit_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_edit_group.py" afterDir="false" />
     </list>
@@ -125,7 +118,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_delete_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_edit_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,11 +130,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_delete_contact.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_edit_contact.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_delete_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_edit_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,24 +146,24 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_delete_group.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_edit_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in test_add_contact.py" />
-      <item itemvalue="Python tests.pytest in test_delete_contact.py" />
-      <item itemvalue="Python tests.pytest in test_delete_group.py" />
-      <item itemvalue="Python tests.pytest in test_add_group.py" />
       <item itemvalue="Python.contact" />
+      <item itemvalue="Python tests.pytest in test_add_contact.py" />
+      <item itemvalue="Python tests.pytest in test_add_group.py" />
+      <item itemvalue="Python tests.pytest in test_edit_group.py" />
+      <item itemvalue="Python tests.pytest in test_edit_contact.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_add_group.py" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
+        <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python.contact" />
-        <item itemvalue="Python tests.pytest in test_delete_contact.py" />
-        <item itemvalue="Python tests.pytest in test_delete_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589901885408</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="11-th task for checking">
+      <created>1590069416597</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590069416597</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,62 +352,63 @@
     <MESSAGE value="completed 10-th task" />
     <MESSAGE value="test commit" />
     <MESSAGE value="Fix ability to add and modify group and contact data partly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix ability to add and modify group and contact data partly" />
+    <MESSAGE value="11-th task for checking" />
+    <option name="LAST_COMMIT_MESSAGE" value="11-th task for checking" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1333" y="88" key="CommitChangelistDialog2" timestamp="1589901884825">
+    <state x="-1333" y="88" key="CommitChangelistDialog2" timestamp="1590069415587">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663238088" />
-    <state x="-1333" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589901884825" />
+    <state x="-1333" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069415587" />
     <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589467642006" />
     <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1589734045383">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589734045383" />
-    <state width="1899" height="425" key="GridCell.Tab.0.bottom" timestamp="1590069369079">
+    <state width="1899" height="308" key="GridCell.Tab.0.bottom" timestamp="1590085135329">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
-    <state width="1899" height="425" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069369079" />
+    <state width="1899" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590085135329" />
     <state width="1899" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589466543324" />
-    <state width="1899" height="425" key="GridCell.Tab.0.center" timestamp="1590069369079">
+    <state width="1899" height="308" key="GridCell.Tab.0.center" timestamp="1590085135329">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="325" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
-    <state width="1899" height="425" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069369079" />
+    <state width="1899" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590085135329" />
     <state width="1899" height="368" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589466543323" />
-    <state width="1899" height="425" key="GridCell.Tab.0.left" timestamp="1590069369078">
+    <state width="1899" height="308" key="GridCell.Tab.0.left" timestamp="1590085135329">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="325" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
-    <state width="1899" height="425" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069369078" />
+    <state width="1899" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590085135329" />
     <state width="1899" height="368" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589466543323" />
-    <state width="1899" height="425" key="GridCell.Tab.0.right" timestamp="1590069369079">
+    <state width="1899" height="308" key="GridCell.Tab.0.right" timestamp="1590085135329">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="325" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588668002257" />
-    <state width="1899" height="425" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069369079" />
+    <state width="1899" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590085135329" />
     <state width="1899" height="368" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589466543323" />
-    <state width="1899" height="425" key="GridCell.Tab.1.bottom" timestamp="1590069369079">
+    <state width="1899" height="425" key="GridCell.Tab.1.bottom" timestamp="1590083800385">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="425" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069369079" />
+    <state width="1899" height="425" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590083800385" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589449757965" />
-    <state width="1899" height="425" key="GridCell.Tab.1.center" timestamp="1590069369079">
+    <state width="1899" height="425" key="GridCell.Tab.1.center" timestamp="1590083800385">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="425" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069369079" />
+    <state width="1899" height="425" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590083800385" />
     <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589449757965" />
-    <state width="1899" height="425" key="GridCell.Tab.1.left" timestamp="1590069369079">
+    <state width="1899" height="425" key="GridCell.Tab.1.left" timestamp="1590083800385">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="425" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069369079" />
+    <state width="1899" height="425" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590083800385" />
     <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589449757965" />
-    <state width="1899" height="425" key="GridCell.Tab.1.right" timestamp="1590069369079">
+    <state width="1899" height="425" key="GridCell.Tab.1.right" timestamp="1590083800385">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="425" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069369079" />
+    <state width="1899" height="425" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590083800385" />
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589449757965" />
     <state x="-1121" y="240" key="RollbackChangesDialog" timestamp="1589721765596">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -417,35 +418,24 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1113" y="434" key="VCS.ChangelistChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589721940731" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1589901948229">
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590069425317">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663281846" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589901948229" />
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069425317" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589467669533" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1590067827480">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590067827480" />
-    <state x="-1827" y="252" width="1483" height="1028" key="dock-window-1" timestamp="1590069379440">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="420" y="291" width="1474" height="692" maximized="true" key="dock-window-1" timestamp="1590084341762">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1827" y="252" width="1483" height="1028" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590069379440" />
+    <state x="420" y="291" width="1474" height="692" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590084341762" />
     <state x="-1734" y="24" width="1353" height="793" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589538449599" />
     <state x="677" y="308" key="git4idea.merge.GitPullDialog" timestamp="1589401444086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589401444086" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test_add_group.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
