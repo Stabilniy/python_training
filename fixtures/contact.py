@@ -1,5 +1,6 @@
 from selenium.webdriver.support.ui import Select
 import time
+from modules.contact import Contact
 class ContactHelper:
 
     def __init__(self, app):
@@ -76,6 +77,29 @@ class ContactHelper:
         self.app.open_homepage()
         return len(wd.find_elements_by_name("selected[]"))
 
+    def get_contact_list(self):
+        wd = self.app.wd
+        self.app.open_homepage()
+        contact_list = []
+        '''
+        for element in wd.find_elements_by_xpath("//body//tr"):
+            i = element.find_element_by_xpath("//tr//td[1]")
+            id = i.find_element_by_name("selected[]").get_attribute("value")
+            text = element.find_element_by_xpath("//tr//td[3]").text
+            #text = element.get_attribute("title")
+            #id = element.get_attribute("value")
+            contact_list.append(Contact(firstname=text, id=id))
+        return contact_list
+       '''
+
+        for element in wd.find_elements_by_name("entry"):
+            i = element.find_element_by_xpath(".//td[1]")
+            id = i.find_element_by_name("selected[]").get_attribute("value")
+            text = element.find_element_by_xpath(".//td[3]").text
+            # text = element.get_attribute("title")
+            # id = element.get_attribute("value")
+            contact_list.append(Contact(firstname=text, id=id))
+        return contact_list
 
 
 
