@@ -24,6 +24,7 @@ class GroupHelper:
         wd.find_element_by_name("submit").click()
         wd.find_element_by_xpath("//div[@id='content']/div").click()
         self.return_to_group_page()
+        self.cache_group = None
 
     def edit(self, new_group):
         wd = self.app.wd
@@ -33,6 +34,7 @@ class GroupHelper:
         self.fill_group_form(new_group)
         wd.find_element_by_name("update").click()
         self.return_to_group_page()
+        self.cache_group = None
 
     def change_filed_value(self, field_name, text):
         wd = self.app.wd
@@ -53,21 +55,25 @@ class GroupHelper:
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_name("delete").click()
         self.return_to_group_page()
+        self.cache_group = None
 
     def count(self):
         wd = self.app.wd
         self.open_groups_page()
         return len(wd.find_elements_by_name("selected[]"))
 
+    cache_group = None
+
     def get_group_list(self):
-        wd = self.app.wd
-        self.open_groups_page()
-        group_list = []
-        for element in wd.find_elements_by_xpath("//body//span"):
-            text = element.text
-            id = element.find_element_by_name("selected[]").get_attribute("value")
-            group_list.append(Group(name = text, id = id))
-        return group_list
+        if self.cache_group is None:
+            wd = self.app.wd
+            self.open_groups_page()
+            self.cache_group = []
+            for element in wd.find_elements_by_xpath("//body//span"):
+                text = element.text
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                self.cache_group.append(Group(name = text, id = id))
+        return list(self.cache_group)
 
 
 
