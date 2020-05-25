@@ -16,14 +16,24 @@ class ContactHelper:
         self.contact_cache = None
 
 
+    def select_contacts_by_index(self,index):
+        wd = self.app.wd
+        wd.find_elements_by_name("selected[]")[index].click()
+
+
     def delete(self):
+        self.delete_contact_by_index(0)
+
+
+    def delete_contact_by_index(self, index):
         wd = self.app.wd
         self.app.open_homepage()
         time.sleep(5)
-        wd.find_element_by_name("selected[]").click()
+        self.select_contacts_by_index(index)
         wd.find_element_by_xpath("//div[2]//input[1]").click()
         wd.switch_to_alert().accept()
         self.contact_cache = None
+
 
     def change_filed_value(self, field_name, text):
         wd = self.app.wd
@@ -32,6 +42,7 @@ class ContactHelper:
             wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
 
+
     def change_selectlist_value(self, field_name, text):
         wd = self.app.wd
         if text is not None:
@@ -39,10 +50,17 @@ class ContactHelper:
             Select(wd.find_element_by_name(field_name)).select_by_visible_text(text)
             #wd.find_element_by_name(field_name).click()
 
-    def edit_contact(self, contact):
+
+    def edit_contact(self):
+        wd = self.app.wd
+        self.edit_contact_by_index(0)
+
+
+    def edit_contact_by_index(self, contact, index):
         wd = self.app.wd
         self.app.open_homepage()
-        wd.find_element_by_xpath("//tr[2]//td[8]//a[1]//img[1]").click()
+        #self.select_contacts_by_index(index)
+        wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
         self.fill_contact_form(contact)
         wd.find_element_by_name("update").click()
         self.contact_cache = None
@@ -75,11 +93,11 @@ class ContactHelper:
         self.change_filed_value("phone2", contact.phone2)
         self.change_filed_value("notes", contact.notes)
 
+
     def count(self):
         wd = self.app.wd
         self.app.open_homepage()
         return len(wd.find_elements_by_name("selected[]"))
-
     contact_cache = None
 
     def get_contact_list(self):

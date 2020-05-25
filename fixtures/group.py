@@ -4,7 +4,8 @@ class GroupHelper:
 
     def __init__(self, app):
         self.app = app
-    
+
+
     def return_to_group_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("group page").click()
@@ -26,15 +27,23 @@ class GroupHelper:
         self.return_to_group_page()
         self.cache_group = None
 
+
     def edit(self, new_group):
         wd = self.app.wd
+        self.edit_group_by_index(new_group, 0)
+
+
+    def edit_group_by_index(self, new_group, index):
+        wd = self.app.wd
         self.open_groups_page()
-        wd.find_element_by_xpath("//span[1]//input[1]").click()
+        #wd.find_elements_by_name("selected")[index].click()
+        self.select_group_by_index(index)
         wd.find_element_by_name("edit").click()
         self.fill_group_form(new_group)
         wd.find_element_by_name("update").click()
         self.return_to_group_page()
         self.cache_group = None
+
 
     def change_filed_value(self, field_name, text):
         wd = self.app.wd
@@ -49,13 +58,26 @@ class GroupHelper:
         self.change_filed_value("group_header", group.header)
         self.change_filed_value("group_footer", group.footer)
 
+
+    def select_group_by_index(self, index):
+        wd = self.app.wd
+        wd.find_elements_by_name("selected[]")[index].click()
+
+
     def delete(self):
         wd = self.app.wd
+        self.delete_group_by_index(0)
+
+
+    def delete_group_by_index(self, index):
+        wd = self.app.wd
         self.open_groups_page()
-        wd.find_element_by_name("selected[]").click()
+        self.select_group_by_index(index)
         wd.find_element_by_name("delete").click()
         self.return_to_group_page()
         self.cache_group = None
+
+
 
     def count(self):
         wd = self.app.wd

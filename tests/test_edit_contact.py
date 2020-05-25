@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from modules.contact import Contact
+from random import randrange
 
 def test_edit_contact(app):
     if app.contact.count() == 0:
@@ -14,15 +15,16 @@ def test_edit_contact(app):
     contact = Contact(firstname="test_by_check_edit", middlename = "test_by_check_edit", lastname = "test_by_check_edit", nickname = "test_by_check_edit", title = "test_by_check_edit", company = "test_by_check_edit", address = "test_by_check_edit", home = "test_by_check_edit", mobile = "test_by_check_edit",
                                               work = "test_by_check_edit", fax ="test_by_check_edit", email = "test_by_check_edit", email1 = "test_by_check_edit", email2 = "test_by_check_edit", email3 = "test_by_check_edit", address2 = "test_by_check_edit", homepage = "test_by_check_edit", bday = "5", bmounth = "July",
                                               byear = "1982", aday = "2", amonth = "July", ayear = "2003", phone2 = "test_by_check_edit", notes = "test_by_check_edit")
-    contact.id = old_contacts[0].id
-    app.contact.edit_contact(contact)
+    index = randrange(len(old_contacts))
+    contact.id = old_contacts[index].id
+    app.contact.edit_contact_by_index(contact, index)
     assert len(old_contacts) == app.contact.count()
     new_contacts = app.contact.get_contact_list()
-    old_contacts [0] = contact
+    old_contacts [index] = contact
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 
-
+'''
 
 def test_edit_contact_few_fields(app):
     if app.contact.count() ==0:
@@ -31,6 +33,6 @@ def test_edit_contact_few_fields(app):
                                               byear = "1982", aday = "2", amonth = "July", ayear = "2003", phone2 = "test_by_check_edit", notes = "test_by_check_edit"))
     app.contact.edit_contact(Contact(middlename="MIDDLENAME!!!!!!!!!!!!!", lastname="LASTNAME!!!!!!!!!!!", nickname="NICKNAME!!!!!!!!!!!!!"))
 
-
+'''
 
 
