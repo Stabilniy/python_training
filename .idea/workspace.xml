@@ -19,16 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="remake of 11-th task">
+    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="13-th task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_delete_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_delete_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_delete_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_delete_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_edit_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_edit_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixtures/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/session.py" afterDir="false" />
     </list>
     <list id="5df58e5e-7c1f-4533-a6e2-aae2dce8b17d" name="test commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -340,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590145459318</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="13-th task">
+      <created>1590400549019</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1590400549019</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,14 +378,15 @@
     <MESSAGE value="second part of 11-th task" />
     <MESSAGE value="commit for 12 task" />
     <MESSAGE value="remake of 11-th task" />
-    <option name="LAST_COMMIT_MESSAGE" value="remake of 11-th task" />
+    <MESSAGE value="13-th task" />
+    <option name="LAST_COMMIT_MESSAGE" value="13-th task" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1333" y="88" key="CommitChangelistDialog2" timestamp="1590145458496">
+    <state x="-1333" y="88" key="CommitChangelistDialog2" timestamp="1590400548097">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663238088" />
-    <state x="-1333" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590145458496" />
+    <state x="-1333" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590400548097" />
     <state x="587" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589467642006" />
     <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1589734045383">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -442,11 +444,11 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1113" y="434" key="VCS.ChangelistChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1589721940731" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590145470875">
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590400561685">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-16.1920.1040/1920.-356.1080.1880@0.0.1920.1040" timestamp="1588663281846" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590145470875" />
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1590400561685" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589467669533" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1590067827480">
       <screen x="-1920" y="0" width="1920" height="1040" />

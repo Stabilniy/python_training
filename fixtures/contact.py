@@ -48,11 +48,9 @@ class ContactHelper:
         if text is not None:
             wd.find_element_by_name(field_name).click()
             Select(wd.find_element_by_name(field_name)).select_by_visible_text(text)
-            #wd.find_element_by_name(field_name).click()
 
 
     def edit_contact(self):
-        wd = self.app.wd
         self.edit_contact_by_index(0)
 
 
