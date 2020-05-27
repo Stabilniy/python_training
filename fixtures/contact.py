@@ -103,13 +103,53 @@ class ContactHelper:
             wd = self.app.wd
             self.app.open_homepage()
             self.contact_cache = []
-            for element in wd.find_elements_by_name("entry"):
-                i = element.find_element_by_xpath(".//td[1]")
-                id = i.find_element_by_name("selected[]").get_attribute("value")
-                text_1 = element.find_element_by_xpath(".//td[3]").text
-                text_2 = element.find_element_by_xpath(".//td[2]").text
-                self.contact_cache.append(Contact(firstname=text_1, lastname = text_2, id=id))
+            for row in wd.find_elements_by_name("entry"):
+                cells = row.find_elements_by_tag_name("td")
+                id = cells[0].find_element_by_tag_name("input").get_attribute("value")
+                firstname = cells[2].text
+                lastname = cells[1].text
+                address = cells[3].text
+                email = cells[4].find_elements_by_tag_name("a")[0].text
+                email1 = cells[4].find_elements_by_tag_name("a")[1].text
+                email2 = cells[4].find_elements_by_tag_name("a")[2].text
+                phone = cells[5].text.splitlines()
+
+                self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, address = address , home = phone[0], mobile = phone[1], work = phone[2], phone2 = phone[3], email = email, email1 = email1, email2 = email2 ))
         return list(self.contact_cache)
+
+    def get_edit_page(self, index):
+        wd = self.app.wd
+        self.app.open_homepage()
+        wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+
+    def data_edit_page(self, index):
+        wd = self.app.wd
+        self.get_edit_page(index)
+        #self.data_list = []
+        firstname = wd.find_element_by_xpath("//input[@name='firstname']").get_attribute("value")
+        lastname = wd.find_element_by_xpath("//input[@name='lastname']").get_attribute("value")
+        address = wd.find_element_by_xpath("//textarea[@name='address']").get_attribute("value")
+        home = wd.find_element_by_xpath("//input[@name='home']").get_attribute("value")
+        mobile = wd.find_element_by_xpath("//input[@name='mobile']").get_attribute("value")
+        work = wd.find_element_by_xpath("//input[@name='work']").get_attribute("value")
+        phone2 = wd.find_element_by_xpath("//input[@name='phone2']").get_attribute("value")
+        email = wd.find_element_by_xpath("//input[@name='email']").get_attribute("value")
+        email1 = wd.find_element_by_xpath("//input[@name='email2']").get_attribute("value")
+        email2 = wd.find_element_by_xpath("//input[@name='email3']").get_attribute("value")
+        return Contact(firstname = firstname, lastname = lastname , address = address, home = home, mobile = mobile, work = work, phone2 = phone2, email = email, email1 = email1, email2 = email2)
+
+'''
+    def data_home_page(self, index):
+        wd = self.app.wd
+        self.app.open_homepage()
+        self.data_list = []
+        self.element = wd.find_element_by_class_name("entry").td[index]
+        i = self.element.find_elements_by_tag("td")
+        firstname = self.i.[3]
+        lastname = self.i.[2]
+
+    #def get_view_page(self):
+'''
 
 
 

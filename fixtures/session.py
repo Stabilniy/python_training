@@ -3,7 +3,6 @@ class SessionHelper:
     def __init__(self, app):
         self.app = app
 
-
     def logout(self):
         wd = self.app.wd
         wd.find_element_by_link_text("Logout").click()
@@ -25,7 +24,6 @@ class SessionHelper:
 
     def is_logged_in_as(self, username):
         wd = self.app.wd
-        #return wd.find_element_by_xpath("//div[@id='top']/form/b").text == "("+username+")"
         return self.get_logged_in_name() == username
 
     def is_logged_in(self):
