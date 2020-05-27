@@ -9,26 +9,17 @@ def test_compare_home_edit_user_page(app):
     contact_data_home_page = app.contact.get_contact_list()[index]
     assert clear(contact_data_edit_page.firstname) == contact_data_home_page.firstname
     assert clear(contact_data_edit_page.lastname) == contact_data_home_page.lastname
-    assert clear(contact_data_edit_page.home) == contact_data_home_page.home
-    assert clear(contact_data_edit_page.mobile) == contact_data_home_page.mobile
-    assert clear(contact_data_edit_page.work) == contact_data_home_page.work
-    assert clear(contact_data_edit_page.phone2) == contact_data_home_page.phone2
+    assert merge_phones_like_on_homepage(contact_data_edit_page) == contact_data_home_page.all_phones
+    assert merge_emails_like_on_homepage(contact_data_edit_page) == contact_data_home_page.all_emails
     assert clear(contact_data_edit_page.address) == contact_data_home_page.address
-    assert clear(contact_data_edit_page.email) == contact_data_home_page.email
-    assert clear(contact_data_edit_page.email1) == contact_data_home_page.email1
-    assert clear(contact_data_edit_page.email2) == contact_data_home_page.email2
 
 def clear(s):
-    return re.sub("[() -]","", s)
+    return re.sub("[() -]", "", s)
 
-'''
-def test_compare_profile_view_edit_user_page(app):
-    contact_data_edit_page = app.contact.data_edit_page(0)
-    contact_data_view_page = app.contact.data_view_page(0)
-    assert contact_data_edit_page.firstname == contact_data_view_page.firstname
-    assert contact_data_edit_page.lastname == contact_data_view_page.lastname
-    assert contact_data_edit_page.home == contact_data_view_page.home
-    assert contact_data_edit_page.mobile == contact_data_view_page.mobile
-    assert contact_data_edit_page.work == contact_data_view_page.work
+def merge_phones_like_on_homepage(contact):
+    return "\n".join(filter(lambda x: x != "", map(lambda x: clear(x), filter(lambda x: x is not None, [contact.home, contact.mobile, contact.work, contact.phone2]))))
 
-'''
+def merge_emails_like_on_homepage(contact):
+    return "\n".join(filter(lambda x: x != "", map(lambda x: clear(x), filter(lambda x: x is not None, [contact.email, contact.email1, contact.email2]))))
+
+

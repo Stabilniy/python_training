@@ -109,12 +109,13 @@ class ContactHelper:
                 firstname = cells[2].text
                 lastname = cells[1].text
                 address = cells[3].text
-                email = cells[4].find_elements_by_tag_name("a")[0].text
-                email1 = cells[4].find_elements_by_tag_name("a")[1].text
-                email2 = cells[4].find_elements_by_tag_name("a")[2].text
-                phone = cells[5].text.splitlines()
+                #all_emails = cells[4].find_elements_by_tag_name("a").text
+                all_emails = cells[4].text
+                #email1 = cells[4].find_elements_by_tag_name("a")[1].text
+                #email2 = cells[4].find_elements_by_tag_name("a")[2].text
+                all_phones = cells[5].text
 
-                self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, address = address , home = phone[0], mobile = phone[1], work = phone[2], phone2 = phone[3], email = email, email1 = email1, email2 = email2 ))
+                self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, address = address , all_phones = all_phones, all_emails = all_emails))
         return list(self.contact_cache)
 
     def get_edit_page(self, index):
