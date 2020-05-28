@@ -6,7 +6,6 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
-    
     def new_contact_creation(self, contact):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
@@ -15,15 +14,12 @@ class ContactHelper:
         self.app.return_to_homepage()
         self.contact_cache = None
 
-
     def select_contacts_by_index(self,index):
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
-
     def delete(self):
         self.delete_contact_by_index(0)
-
 
     def delete_contact_by_index(self, index):
         wd = self.app.wd
@@ -34,7 +30,6 @@ class ContactHelper:
         wd.switch_to_alert().accept()
         self.contact_cache = None
 
-
     def change_filed_value(self, field_name, text):
         wd = self.app.wd
         if text is not None:
@@ -42,27 +37,22 @@ class ContactHelper:
             wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
 
-
     def change_selectlist_value(self, field_name, text):
         wd = self.app.wd
         if text is not None:
             wd.find_element_by_name(field_name).click()
             Select(wd.find_element_by_name(field_name)).select_by_visible_text(text)
 
-
     def edit_contact(self):
         self.edit_contact_by_index(0)
-
 
     def edit_contact_by_index(self, contact, index):
         wd = self.app.wd
         self.app.open_homepage()
-        #self.select_contacts_by_index(index)
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
         self.fill_contact_form(contact)
         wd.find_element_by_name("update").click()
         self.contact_cache = None
-
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
@@ -91,7 +81,6 @@ class ContactHelper:
         self.change_filed_value("phone2", contact.phone2)
         self.change_filed_value("notes", contact.notes)
 
-
     def count(self):
         wd = self.app.wd
         self.app.open_homepage()
@@ -109,12 +98,8 @@ class ContactHelper:
                 firstname = cells[2].text
                 lastname = cells[1].text
                 address = cells[3].text
-                #all_emails = cells[4].find_elements_by_tag_name("a").text
                 all_emails = cells[4].text
-                #email1 = cells[4].find_elements_by_tag_name("a")[1].text
-                #email2 = cells[4].find_elements_by_tag_name("a")[2].text
                 all_phones = cells[5].text
-
                 self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, address = address , all_phones = all_phones, all_emails = all_emails))
         return list(self.contact_cache)
 
@@ -126,7 +111,6 @@ class ContactHelper:
     def data_edit_page(self, index):
         wd = self.app.wd
         self.get_edit_page(index)
-        #self.data_list = []
         firstname = wd.find_element_by_xpath("//input[@name='firstname']").get_attribute("value")
         lastname = wd.find_element_by_xpath("//input[@name='lastname']").get_attribute("value")
         address = wd.find_element_by_xpath("//textarea[@name='address']").get_attribute("value")
@@ -139,18 +123,6 @@ class ContactHelper:
         email2 = wd.find_element_by_xpath("//input[@name='email3']").get_attribute("value")
         return Contact(firstname = firstname, lastname = lastname , address = address, home = home, mobile = mobile, work = work, phone2 = phone2, email = email, email1 = email1, email2 = email2)
 
-'''
-    def data_home_page(self, index):
-        wd = self.app.wd
-        self.app.open_homepage()
-        self.data_list = []
-        self.element = wd.find_element_by_class_name("entry").td[index]
-        i = self.element.find_elements_by_tag("td")
-        firstname = self.i.[3]
-        lastname = self.i.[2]
-
-    #def get_view_page(self):
-'''
 
 
 
