@@ -10,7 +10,7 @@ def random_string(prefix, maxlen):
     return prefix + '_'.join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 test_data = [Group(name="testname", header="testheader", footer="testfooter")] + [
-             Group(name = random_string("name", 10), header= random_string("header", 20), footer = random_string("footer", 15)) for i in range(15)]
+             Group(name = random_string("name", 10), header= random_string("header", 20), footer = random_string("footer", 15)) for i in range(2)]
 
 @pytest.mark.parametrize("group", test_data, ids=[repr(x) for x in test_data])
 def test_add_group(app,group):
