@@ -1,8 +1,9 @@
+import jsonpickle
 from modules.group import Group
 import random
 import string
 import os.path
-import json
+
 import getopt
 import sys
 
@@ -13,7 +14,7 @@ except getopt.GetoptError as err:
     sys.exit(2)
 
 n = 1
-f = "data/groups.json"
+f = "data/groupsssss.json"
 
 for o, a in opts:
     if o == "-n":
@@ -31,4 +32,5 @@ test_data = [Group(name="testname", header="testheader", footer="testfooter")] +
 file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", f)
 
 with open(file, "w") as out:
-    out.write(json.dumps(test_data, default=lambda x: x.__dict__, indent=2))
+    jsonpickle.set_encoder_options("json", indent=2)
+    out.write(jsonpickle.encode(test_data))
