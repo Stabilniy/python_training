@@ -1,5 +1,5 @@
 from modules.group import Group
-
+from fixtures import db
 def test_group_list(app, db):
     ui_list = app.group.get_group_list()
     def clean(group):
