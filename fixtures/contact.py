@@ -18,6 +18,11 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
+    def select_contacts_by_id(self, id):
+        wd = self.app.wd
+        #wd.find_elements_by_name("selected[]")[index].click()
+        wd.find_element_by_xpath("//input[@id='%s']" % id).click()
+
     def delete(self):
         self.delete_contact_by_index(0)
 
@@ -29,6 +34,16 @@ class ContactHelper:
         wd.find_element_by_xpath("//div[2]//input[1]").click()
         wd.switch_to_alert().accept()
         self.contact_cache = None
+
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.app.open_homepage()
+        time.sleep(5)
+        self.select_contacts_by_id(id)
+        wd.find_element_by_xpath("//div[2]//input[1]").click()
+        wd.switch_to_alert().accept()
+        self.contact_cache = None
+
 
     def change_filed_value(self, field_name, text):
         wd = self.app.wd
@@ -50,6 +65,15 @@ class ContactHelper:
         wd = self.app.wd
         self.app.open_homepage()
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+        self.fill_contact_form(contact)
+        wd.find_element_by_name("update").click()
+        self.contact_cache = None
+
+    def edit_contact_by_id(self, contact, id):
+        wd = self.app.wd
+        self.app.open_homepage()
+        wd.get("http://localhost/addressbook/edit.php?id='%s'" %id)
+        #wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
         self.fill_contact_form(contact)
         wd.find_element_by_name("update").click()
         self.contact_cache = None

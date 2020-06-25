@@ -39,6 +39,17 @@ class GroupHelper:
         self.return_to_group_page()
         self.cache_group = None
 
+    def edit_group_by_id(self, new_group, id):
+        wd = self.app.wd
+        self.open_groups_page()
+        #wd.find_elements_by_name("selected")[index].click()
+        self.select_group_by_id(id)
+        wd.find_element_by_name("edit").click()
+        self.fill_group_form(new_group)
+        wd.find_element_by_name("update").click()
+        self.return_to_group_page()
+        self.cache_group = None
+
     def change_filed_value(self, field_name, text):
         wd = self.app.wd
         if text is not None:
@@ -55,6 +66,11 @@ class GroupHelper:
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
+    def select_group_by_id(self, id):
+        wd = self.app.wd
+        #wd.find_element_by_xpath("//body//span['%s']" % id).click()
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+
     def delete(self):
         wd = self.app.wd
         self.delete_group_by_index(0)
@@ -66,6 +82,15 @@ class GroupHelper:
         wd.find_element_by_name("delete").click()
         self.return_to_group_page()
         self.cache_group = None
+
+    def delete_group_by_id(self, id):
+        wd = self.app.wd
+        self.open_groups_page()
+        self.select_group_by_id(id)
+        wd.find_element_by_name("delete").click()
+        self.return_to_group_page()
+        self.cache_group = None
+
 
     def count(self):
         wd = self.app.wd
