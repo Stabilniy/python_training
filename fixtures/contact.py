@@ -127,6 +127,23 @@ class ContactHelper:
                 self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, address = address , all_phones = all_phones, all_emails = all_emails))
         return list(self.contact_cache)
 
+    #def get_contact_list(self):
+    #    if self.contact_cache is None:
+    #        wd = self.app.wd
+    #        self.app.open_homepage()
+    #        self.contact_cache = []
+    #        for row in wd.find_elements_by_name("entry"):
+    #            cells = row.find_elements_by_tag_name("td")
+    #            id = cells[0].find_element_by_tag_name("input").get_attribute("value")
+    #            firstname = cells[2].text
+    #            lastname = cells[1].text
+    #            address = cells[3].text
+    #            all_emails = cells[4].text
+    #            all_phones = cells[5].text
+    #            self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, all_emails = all_emails))
+    #   return list(self.contact_cache)
+
+
     def get_edit_page(self, index):
         wd = self.app.wd
         self.app.open_homepage()
