@@ -164,6 +164,21 @@ class ContactHelper:
         email2 = wd.find_element_by_xpath("//input[@name='email3']").get_attribute("value")
         return Contact(firstname = firstname, lastname = lastname , address = address, home = home, mobile = mobile, work = work, phone2 = phone2, email = email, email1 = email1, email2 = email2)
 
+    def add_contact_to_group(self, id_contact, id_group):
+        wd = self.app.wd
+        self.select_contacts_by_id(id_contact)
+        Select(wd.find_element_by_name("to_group")).select_by_value(id_group)
+        wd.find_element_by_name("add").click()
+
+    def delete_contact_from_group(self, id_contact, id_group):
+        wd = self.app.wd
+        wd.get("http://localhost/addressbook/?group='%s'" %id_group)
+        self.select_contacts_by_id(id_contact)
+        wd.find_element_by_name("remove").click()
+
+
+
+
 
 
 
