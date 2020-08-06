@@ -166,13 +166,16 @@ class ContactHelper:
 
     def add_contact_to_group(self, id_contact, id_group):
         wd = self.app.wd
+        self.app.open_homepage()
+        time.sleep(5)
         self.select_contacts_by_id(id_contact)
         Select(wd.find_element_by_name("to_group")).select_by_value(id_group)
         wd.find_element_by_name("add").click()
 
     def delete_contact_from_group(self, id_contact, id_group):
         wd = self.app.wd
-        wd.get("http://localhost/addressbook/?group='%s'" %id_group)
+        wd.get("http://localhost/addressbook/?group=%s" %id_group)
+        time.sleep(5)
         self.select_contacts_by_id(id_contact)
         wd.find_element_by_name("remove").click()
 

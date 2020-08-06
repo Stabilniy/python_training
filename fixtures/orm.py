@@ -2,6 +2,8 @@ from pony.orm import *
 #from datetime import datetime
 from modules.group import Group
 from modules.contact import Contact
+from fixtures.db import Group
+
 from pymysql.converters import decoders
 
 
@@ -59,3 +61,35 @@ class ORMFixture:
     def get_contacts_not_in_group(self, group):
         orm_group = list(select(g for g in ORMFixture.ORMGroup if g.id == group.id))[0]
         return self.convert_contacts_to_model(select(c for c in ORMFixture.ORMContact if c.deprecated is None and orm_group not in c.groups))
+
+    @db_session
+    def get_all_group_id(self):
+        list_groups = self.get_group_list()
+        list_id_groups = []
+        for x in list_groups:
+            list_id_groups.append(x.id)
+        return list_id_groups
+
+    @db_session
+    def get_list_id_contact_in_group(self, group_id):
+        list_contact_id = []
+        for c in self.get_contacts_in_group(group_id):
+            list_contact_id.append(c.id)
+        return list_contact_id
+
+    @db_session
+    def get_not_related_group_contact(self):
+        for y in self.get_all_group_id():
+            l = self.get_contacts_not_in_group(Group(id=y))
+            if len(l) > 0:
+                return l[0].id, y
+            else:
+                return False
+
+
+
+
+
+
+
+
