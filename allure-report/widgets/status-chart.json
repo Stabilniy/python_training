@@ -1,0 +1,141 @@
+[ {
+  "uid" : "ee81227467bab3d4",
+  "name" : "test_edit_group",
+  "time" : {
+    "start" : 1599743502599,
+    "stop" : 1599743505763,
+    "duration" : 3164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8202921d8a58423c",
+  "name" : "test_add_contact_to_group",
+  "time" : {
+    "start" : 1599743423109,
+    "stop" : 1599743435019,
+    "duration" : 11910
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "924a8420294d539c",
+  "name" : "test_delete_contact",
+  "time" : {
+    "start" : 1599743471157,
+    "stop" : 1599743479983,
+    "duration" : 8826
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d13150ea0bf9082d",
+  "name" : "test_add_group[None:testname:testheader:testfooter]",
+  "time" : {
+    "start" : 1599743436160,
+    "stop" : 1599743437686,
+    "duration" : 1526
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90b1d5aa2b0a4cb",
+  "name" : "test_edit_contact",
+  "time" : {
+    "start" : 1599743485302,
+    "stop" : 1599743500639,
+    "duration" : 15337
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eacbdbeb76d608e0",
+  "name" : "test_group_list",
+  "time" : {
+    "start" : 1599743468666,
+    "stop" : 1599743469209,
+    "duration" : 543
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d57cc69807b4e02",
+  "name" : "test_compare_home_edit_user_page",
+  "time" : {
+    "start" : 1599743449746,
+    "stop" : 1599743453252,
+    "duration" : 3506
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d825668136861d7",
+  "name" : "test_add_group[None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;]",
+  "time" : {
+    "start" : 1599743439289,
+    "stop" : 1599743442429,
+    "duration" : 3140
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a5ff0a79d0d1f5a",
+  "name" : "test_add_group[None:name:header\"_S_q_;_G_h_^_ _R_>_]_<:footerh_;_L_M_[_*_n_s_,_B_e]",
+  "time" : {
+    "start" : 1599743444569,
+    "stop" : 1599743447734,
+    "duration" : 3165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb4b1bda95caaff2",
+  "name" : "test_compare_contact_home_db",
+  "time" : {
+    "start" : 1599743460985,
+    "stop" : 1599743460988,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8c714171f3ca242",
+  "name" : "test_delete_some_group",
+  "time" : {
+    "start" : 1599743482281,
+    "stop" : 1599743483347,
+    "duration" : 1066
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e4cec475a9d5f2b",
+  "name" : "test_add_contact[None:firstnameA_x_R_m_v_q_G_G_J_T_z_3:lastnameq:None:None:addressH_W_P_3_X_Q]",
+  "time" : {
+    "start" : 1599743408967,
+    "stop" : 1599743414159,
+    "duration" : 5192
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4606cdf49d1e8771",
+  "name" : "test_add_contact[None:firstnameL_3_w_r_v_m_W:lastname3_4_Q_p:None:None:addressw]",
+  "time" : {
+    "start" : 1599743401813,
+    "stop" : 1599743407128,
+    "duration" : 5315
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c906d5f9cdc86b51",
+  "name" : "test_add_contact[None:firstnamev_Y_u:lastnameR_F_3_x_w_X_a_1_K_k_G_A_R_W:None:None:addressS_A_p_p_F_a_g_2_I_P_h_4_G]",
+  "time" : {
+    "start" : 1599743415935,
+    "stop" : 1599743421240,
+    "duration" : 5305
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

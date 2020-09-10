@@ -1,0 +1,211 @@
+{
+  "uid" : "6d825668136861d7",
+  "name" : "test_add_group[None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;]",
+  "fullName" : "tests.test_add_group#test_add_group",
+  "historyId" : "0a46a4820c1dab3b25d04453f5fb5435",
+  "time" : {
+    "start" : 1599743439289,
+    "stop" : 1599743442429,
+    "duration" : 3140
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert [1:testname:t..._s_,_B_e, ...] == [1:testname:t..._s_,_B_e, ...]\n  At index 24 diff: None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _; != 26:name{_:headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;\n  Use -v to get the full diff",
+  "statusTrace" : "app = <fixtures.application.Application object at 0x04214C58>, db = <fixtures.db.DbFixture object at 0x04214B38>\njson_groups = None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;, check_ui = False\n\n    def test_add_group(app, db, json_groups, check_ui):\n        group = json_groups\n        with allure.step('Given a group list'):\n            old_group = db.get_group_list()\n        with allure.step('When I add group %s to the list' % group):\n            app.group.create_group(group)\n        with allure.step('Then the new group list is equal to the old list with added group'):\n            new_group = db.get_group_list()\n            old_group.append(group)\n>           assert sorted(old_group, key =Group.id_or_max) == sorted(new_group, key=Group.id_or_max)\nE           assert [1:testname:t..._s_,_B_e, ...] == [1:testname:t..._s_,_B_e, ...]\nE             At index 24 diff: None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _; != 26:name{_:headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;\nE             Use -v to get the full diff\n\ntests\\test_add_group.py:14: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "stop",
+    "time" : {
+      "start" : 1599743388551,
+      "stop" : 1599743388551,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1599743388551,
+      "stop" : 1599743388568,
+      "duration" : 17
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1599743437695,
+      "stop" : 1599743439288,
+      "duration" : 1593
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1599743439289,
+      "stop" : 1599743439289,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert [1:testname:t..._s_,_B_e, ...] == [1:testname:t..._s_,_B_e, ...]\n  At index 24 diff: None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _; != 26:name{_:headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;\n  Use -v to get the full diff",
+    "statusTrace" : "app = <fixtures.application.Application object at 0x04214C58>, db = <fixtures.db.DbFixture object at 0x04214B38>\njson_groups = None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;, check_ui = False\n\n    def test_add_group(app, db, json_groups, check_ui):\n        group = json_groups\n        with allure.step('Given a group list'):\n            old_group = db.get_group_list()\n        with allure.step('When I add group %s to the list' % group):\n            app.group.create_group(group)\n        with allure.step('Then the new group list is equal to the old list with added group'):\n            new_group = db.get_group_list()\n            old_group.append(group)\n>           assert sorted(old_group, key =Group.id_or_max) == sorted(new_group, key=Group.id_or_max)\nE           assert [1:testname:t..._s_,_B_e, ...] == [1:testname:t..._s_,_B_e, ...]\nE             At index 24 diff: None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _; != 26:name{_:headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;\nE             Use -v to get the full diff\n\ntests\\test_add_group.py:14: AssertionError",
+    "steps" : [ {
+      "name" : "Given a group list",
+      "time" : {
+        "start" : 1599743439290,
+        "stop" : 1599743439291,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "When I add group None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _; to the list",
+      "time" : {
+        "start" : 1599743439291,
+        "stop" : 1599743442427,
+        "duration" : 3136
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Then the new group list is equal to the old list with added group",
+      "time" : {
+        "start" : 1599743442427,
+        "stop" : 1599743442428,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert [1:testname:t..._s_,_B_e, ...] == [1:testname:t..._s_,_B_e, ...]\n  At index 24 diff: None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _; != 26:name{_:headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;\n  Use -v to get the full diff\n",
+      "statusTrace" : "  File \"C:\\Users\\stabi\\PycharmProjects\\python_training\\tests\\test_add_group.py\", line 14, in test_add_group\n    assert sorted(old_group, key =Group.id_or_max) == sorted(new_group, key=Group.id_or_max)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1599743505766,
+      "stop" : 1599743506609,
+      "duration" : 843
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1599743505765,
+      "stop" : 1599743505765,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_group"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GVF02GM"
+  }, {
+    "name" : "thread",
+    "value" : "8220-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_add_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_groups",
+    "value" : "None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6d825668136861d7.json",
+  "parameterValues" : [ "None:name{_<_V_._9_O_7_ :headerI_;_*_I_H_$_ _e_4_?_N_v_}:footer _`_+_T_&_-_o_$_c_!_\"_~_ _;" ]
+}
