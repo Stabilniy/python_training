@@ -27,5 +27,3 @@ def test_add_contact_to_group(app):
     free_contact, free_group = db.get_not_related_group_contact()
     app.contact.add_contact_to_group(free_contact, str(free_group))
     assert str(free_contact) in db.get_list_id_contact_in_group(Group(id=free_group))
-    app.contact.delete_contact_from_group(free_contact, free_group)
-    assert str(free_contact) not in db.get_list_id_contact_in_group(Group(id=free_group))
