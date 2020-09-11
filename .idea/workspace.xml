@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="new file - requirements">
+    <list default="true" id="aa4ab00f-93b9-4414-aa80-5b962a646a30" name="Default" comment="29 task is ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_group.py" afterDir="false" />
     </list>
     <list id="2e5c3b69-72c1-472b-895a-d18fb4f08a6a" name="22-th task in progress" comment="" />
@@ -472,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598996873841</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="29 task is ready">
+      <created>1599747947406</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1599747947406</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -491,7 +499,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed 8-th task" />
     <MESSAGE value="completed 9-th task" />
     <MESSAGE value="completed 10-th task" />
     <MESSAGE value="test commit" />
@@ -516,7 +523,8 @@
     <MESSAGE value="22-th task in progress" />
     <MESSAGE value="21 task is ready" />
     <MESSAGE value="new file - requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="new file - requirements" />
+    <MESSAGE value="29 task is ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="29 task is ready" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1334" y="198" key="#Inspections" timestamp="1591799464003">
@@ -585,16 +593,16 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1072" y="387" width="386" height="265" key="MultipleFileMergeDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592820072481" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1599685631614">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1599807280854">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1574" y="72" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1599598975043" />
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1597680977662" />
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599685631614" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1598996885879">
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599807280854" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1599747969594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1598996885879" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1599747969594" />
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592820107542" />
     <state x="385" y="155" width="1158" height="559" key="dock-window-1" timestamp="1597730604436">
       <screen x="0" y="0" width="1536" height="824" />
