@@ -143,11 +143,11 @@ class ContactHelper:
     #            self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, all_emails = all_emails))
     #   return list(self.contact_cache)
 
-
     def get_edit_page(self, index):
         wd = self.app.wd
-        self.app.open_homepage()
-        wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+        #self.app.open_homepage()
+        #wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+        wd.get("http://localhost/addressbook/edit.php?id=%s"%index)
 
     def data_edit_page(self, index):
         wd = self.app.wd
@@ -162,7 +162,31 @@ class ContactHelper:
         email = wd.find_element_by_xpath("//input[@name='email']").get_attribute("value")
         email1 = wd.find_element_by_xpath("//input[@name='email2']").get_attribute("value")
         email2 = wd.find_element_by_xpath("//input[@name='email3']").get_attribute("value")
-        return Contact(firstname = firstname, lastname = lastname , address = address, home = home, mobile = mobile, work = work, phone2 = phone2, email = email, email1 = email1, email2 = email2)
+        return Contact(firstname=firstname, lastname=lastname, address=address, home=home, mobile=mobile, work=work,
+                       phone2=phone2, email=email, email1=email1, email2=email2)
+
+
+
+
+    #def get_edit_page(self, index):
+     #   wd = self.app.wd
+      #  self.app.open_homepage()
+       # wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+
+    #def data_edit_page(self, index):
+     #   wd = self.app.wd
+     #   self.get_edit_page(index)
+     #   firstname = wd.find_element_by_xpath("//input[@name='firstname']").get_attribute("value")
+     #   lastname = wd.find_element_by_xpath("//input[@name='lastname']").get_attribute("value")
+     #   address = wd.find_element_by_xpath("//textarea[@name='address']").get_attribute("value")
+     #   home = wd.find_element_by_xpath("//input[@name='home']").get_attribute("value")
+     #   mobile = wd.find_element_by_xpath("//input[@name='mobile']").get_attribute("value")
+     #   work = wd.find_element_by_xpath("//input[@name='work']").get_attribute("value")
+     #   phone2 = wd.find_element_by_xpath("//input[@name='phone2']").get_attribute("value")
+     #   email = wd.find_element_by_xpath("//input[@name='email']").get_attribute("value")
+     #   email1 = wd.find_element_by_xpath("//input[@name='email2']").get_attribute("value")
+     #   email2 = wd.find_element_by_xpath("//input[@name='email3']").get_attribute("value")
+     #   return Contact(firstname = firstname, lastname = lastname , address = address, home = home, mobile = mobile, work = work, phone2 = phone2, email = email, email1 = email1, email2 = email2)
 
     def add_contact_to_group(self, id_contact, id_group):
         wd = self.app.wd

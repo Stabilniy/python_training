@@ -78,6 +78,15 @@ class ORMFixture:
         return list_contact_id
 
     @db_session
+    def get_related_group_contact(self):
+        for yx in self.get_all_group_id():
+            li = self.get_contacts_in_group(Group(id=yx))
+            if len(li) > 0:
+                return li[0].id, yx
+            else:
+                return False
+
+    @db_session
     def get_not_related_group_contact(self):
         for y in self.get_all_group_id():
             l = self.get_contacts_not_in_group(Group(id=y))

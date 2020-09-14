@@ -25,6 +25,7 @@ class DbFixture():
 
     def get_contact_list(self):
         list = []
+        id_list = []
         cursor = self.connection.cursor()
         try:
             cursor.execute("select id, company, firstname, lastname, email, email2, email3, home, mobile, work, phone2, address from addressbook")
@@ -32,11 +33,30 @@ class DbFixture():
                 (id, company, firstname, lastname, email, email2, email3, home, mobile, work, phone2, address) = row
                 all_emails = "\n".join([email, email2, email3])
                 all_phones = "\n".join([home, mobile, work, phone2])
+                id_list.append(id)
 
                 list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, all_emails=all_emails, all_phones=all_phones, address = address))
+                #id_list.append(Contact(id=str(id)))
         finally:
             cursor.close()
         return list
+
+    def get_contact_id(self):
+        id_list = []
+        cursor = self.connection.cursor()
+        try:
+            cursor.execute("select id, company, firstname, lastname, email, email2, email3, home, mobile, work, phone2, address from addressbook")
+            for row in cursor:
+                (id, company, firstname, lastname, email, email2, email3, home, mobile, work, phone2, address) = row
+                all_emails = "\n".join([email, email2, email3])
+                all_phones = "\n".join([home, mobile, work, phone2])
+                id_list.append(id)
+
+                #list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, all_emails=all_emails, all_phones=all_phones, address = address))
+                #id_list.append(Contact(id=str(id)))
+        finally:
+            cursor.close()
+        return id_list
 
     def destroy(self):
         self.connection.close()
