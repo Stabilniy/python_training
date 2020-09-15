@@ -20,7 +20,6 @@ class ContactHelper:
 
     def select_contacts_by_id(self, id):
         wd = self.app.wd
-        #wd.find_elements_by_name("selected[]")[index].click()
         wd.find_element_by_xpath("//input[@id='%s']" % id).click()
 
     def delete(self):
@@ -73,7 +72,6 @@ class ContactHelper:
         wd = self.app.wd
         #self.app.open_homepage()
         wd.get("http://localhost/addressbook/edit.php?id='%s'" %id)
-        #wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
         self.fill_contact_form(contact)
         wd.find_element_by_name("update").click()
         self.contact_cache = None
@@ -152,7 +150,6 @@ class ContactHelper:
     def get_edit_page_id(self, id):
         wd = self.app.wd
         self.app.open_homepage()
-        #wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
         wd.get("http://localhost/addressbook/edit.php?id='%s'" % id)
 
     def data_edit_page_id(self, id):
