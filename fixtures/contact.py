@@ -71,7 +71,7 @@ class ContactHelper:
 
     def edit_contact_by_id(self, contact, id):
         wd = self.app.wd
-        self.app.open_homepage()
+        #self.app.open_homepage()
         wd.get("http://localhost/addressbook/edit.php?id='%s'" %id)
         #wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
         self.fill_contact_form(contact)
@@ -127,31 +127,15 @@ class ContactHelper:
                 self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, address = address , all_phones = all_phones, all_emails = all_emails))
         return list(self.contact_cache)
 
-    #def get_contact_list(self):
-    #    if self.contact_cache is None:
-    #        wd = self.app.wd
-    #        self.app.open_homepage()
-    #        self.contact_cache = []
-    #        for row in wd.find_elements_by_name("entry"):
-    #            cells = row.find_elements_by_tag_name("td")
-    #            id = cells[0].find_element_by_tag_name("input").get_attribute("value")
-    #            firstname = cells[2].text
-    #            lastname = cells[1].text
-    #            address = cells[3].text
-    #            all_emails = cells[4].text
-    #            all_phones = cells[5].text
-    #            self.contact_cache.append(Contact(firstname=firstname, lastname = lastname, id=id, all_emails = all_emails))
-    #   return list(self.contact_cache)
 
-    def get_edit_page(self, index):
+    def get_edit_page_index(self, index):
         wd = self.app.wd
-        #self.app.open_homepage()
-        #wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
-        wd.get("http://localhost/addressbook/edit.php?id=%s"%index)
+        self.app.open_homepage()
+        wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
 
-    def data_edit_page(self, index):
+    def data_edit_page_index(self, index):
         wd = self.app.wd
-        self.get_edit_page(index)
+        self.get_edit_page_index(index)
         firstname = wd.find_element_by_xpath("//input[@name='firstname']").get_attribute("value")
         lastname = wd.find_element_by_xpath("//input[@name='lastname']").get_attribute("value")
         address = wd.find_element_by_xpath("//textarea[@name='address']").get_attribute("value")
@@ -162,31 +146,29 @@ class ContactHelper:
         email = wd.find_element_by_xpath("//input[@name='email']").get_attribute("value")
         email1 = wd.find_element_by_xpath("//input[@name='email2']").get_attribute("value")
         email2 = wd.find_element_by_xpath("//input[@name='email3']").get_attribute("value")
-        return Contact(firstname=firstname, lastname=lastname, address=address, home=home, mobile=mobile, work=work,
-                       phone2=phone2, email=email, email1=email1, email2=email2)
+        return Contact(firstname = firstname, lastname = lastname , address = address, home = home, mobile = mobile, work = work, phone2 = phone2, email = email, email1 = email1, email2 = email2)
 
 
+    def get_edit_page_id(self, id):
+        wd = self.app.wd
+        self.app.open_homepage()
+        #wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+        wd.get("http://localhost/addressbook/edit.php?id='%s'" % id)
 
-
-    #def get_edit_page(self, index):
-     #   wd = self.app.wd
-      #  self.app.open_homepage()
-       # wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
-
-    #def data_edit_page(self, index):
-     #   wd = self.app.wd
-     #   self.get_edit_page(index)
-     #   firstname = wd.find_element_by_xpath("//input[@name='firstname']").get_attribute("value")
-     #   lastname = wd.find_element_by_xpath("//input[@name='lastname']").get_attribute("value")
-     #   address = wd.find_element_by_xpath("//textarea[@name='address']").get_attribute("value")
-     #   home = wd.find_element_by_xpath("//input[@name='home']").get_attribute("value")
-     #   mobile = wd.find_element_by_xpath("//input[@name='mobile']").get_attribute("value")
-     #   work = wd.find_element_by_xpath("//input[@name='work']").get_attribute("value")
-     #   phone2 = wd.find_element_by_xpath("//input[@name='phone2']").get_attribute("value")
-     #   email = wd.find_element_by_xpath("//input[@name='email']").get_attribute("value")
-     #   email1 = wd.find_element_by_xpath("//input[@name='email2']").get_attribute("value")
-     #   email2 = wd.find_element_by_xpath("//input[@name='email3']").get_attribute("value")
-     #   return Contact(firstname = firstname, lastname = lastname , address = address, home = home, mobile = mobile, work = work, phone2 = phone2, email = email, email1 = email1, email2 = email2)
+    def data_edit_page_id(self, id):
+        wd = self.app.wd
+        self.get_edit_page_id(id)
+        firstname = wd.find_element_by_xpath("//input[@name='firstname']").get_attribute("value")
+        lastname = wd.find_element_by_xpath("//input[@name='lastname']").get_attribute("value")
+        address = wd.find_element_by_xpath("//textarea[@name='address']").get_attribute("value")
+        home = wd.find_element_by_xpath("//input[@name='home']").get_attribute("value")
+        mobile = wd.find_element_by_xpath("//input[@name='mobile']").get_attribute("value")
+        work = wd.find_element_by_xpath("//input[@name='work']").get_attribute("value")
+        phone2 = wd.find_element_by_xpath("//input[@name='phone2']").get_attribute("value")
+        email = wd.find_element_by_xpath("//input[@name='email']").get_attribute("value")
+        email1 = wd.find_element_by_xpath("//input[@name='email2']").get_attribute("value")
+        email2 = wd.find_element_by_xpath("//input[@name='email3']").get_attribute("value")
+        return Contact(firstname = firstname, lastname = lastname , address = address, home = home, mobile = mobile, work = work, phone2 = phone2, email = email, email1 = email1, email2 = email2)
 
     def add_contact_to_group(self, id_contact, id_group):
         wd = self.app.wd
@@ -202,11 +184,5 @@ class ContactHelper:
         time.sleep(5)
         self.select_contacts_by_id(id_contact)
         wd.find_element_by_name("remove").click()
-
-
-
-
-
-
 
 
